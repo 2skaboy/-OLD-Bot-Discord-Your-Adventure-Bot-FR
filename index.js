@@ -13,7 +13,7 @@ bot.on('ready', function () {
 
 
 })
-        bot.login("")
+        bot.login("token")
 
         bot.on('message', message => {
 
@@ -94,36 +94,36 @@ bot.on('ready', function () {
             .setFooter('Développed by Gymp_MC (Gymp_#4272)')
 
             if(message.content === "^^help"){
-                console.log(user.tag +' => ^^help')
+                console.log(' => ^^help')
                 message.channel.send(info_embed)
                 } 
             if(message.content === "^^jungle"){
-                console.log(user.tag +' => Jungle')
+                console.log(' => Jungle')
                 message.channel.send(jungle_embed)
                     .then(message =>{
                         message.react('✅')
                         bot.on('messageReactionAdd', (reaction, user) =>{
                             if (reaction.emoji.name === '✅' && user.id !== bot.user.id){
-                                console.log(user.tag + ' => Jungle => Part 1')
+                                console.log(' => Jungle => Part 1')
                                 message.channel.send(jungle_part1_embed)
                                     .then(message =>{
                                         message.react('🌴')
                                         message.react('🪓')
                                         bot.on('messageReactionAdd', (reaction, user) =>{
                                             if (reaction.emoji.name === '🌴' && user.id !== bot.user.id){
-                                                console.log(user.tag + ' => Jungle => Part1 => Part 1,1')
+                                                console.log(' => Jungle => Part1 => Part 1,1')
                                                 message.channel.send(jungle_arbre_embed)
                                                     .then(message =>{
-                                                        message.react('🛕')
+                                                        message.react('👉')
                                                         message.react('🚶‍♂️')
-                                                        if(reaction.emoji.name === '🛕' && user.id !== bot.user.id){
-                                                            console.log(user.tag + ' => Jungle => Part1 => Part1,1 => Temple Abandonné')
+                                                        if(reaction.emoji.name === '👉' && user.id !== bot.user.id){
+                                                            console.log(' => Jungle => Part1 => Part1,1 => Temple Abandonné')
                                                             message.channel.send(jungle_temple_embed)
                                                                 .then(message =>{
                                                                     message.react('🍖')
                                                                     message.react('🔥')
                                                                     if(reaction.emoji.name === '🔥' && user.id !== bot.user.id){
-                                                                        console.log(user.tag + ' => Jungle => Part1 => Part1,1 => Temple Abandonné => Feu')
+                                                                        console.log(' => Jungle => Part1 => Part1,1 => Temple Abandonné => Feu')
                                                                         message.channel.send()
                                                                             .then(message =>{
                                                                                 
@@ -133,7 +133,7 @@ bot.on('ready', function () {
                                                                         }
                                                                     }
                                                                     if(reaction.emoji.name === '🍖' && user.id !== bot.user.id){
-                                                                        console.log(user.tag + ' => Jungle => Part1 => Part1,1 => Temple Abandonné => Chasse')
+                                                                        console.log(' => Jungle => Part1 => Part1,1 => Temple Abandonné => Chasse')
                                                                         message.channel.send()
                                                                         if(reaction.emoji.name === '' && user.id !== bot.user.id){
 
@@ -142,23 +142,23 @@ bot.on('ready', function () {
                                                                 })
                                                         }
                                                         if(reaction.emoji.name === '🚶‍♂️' && user.id !== bot.user.id){
-                                                            console.log(user.tag + ' => Jungle => Part1 => Part1,1 => Marche')
-                                                            message.channel.send()
+                                                            console.log(' => Jungle => Part1 => Part1,1 => Marche')
+                                                            message.channel.send('salut')
                                                         }
                                                     })
                                             }
                                             if(reaction.emoji.name === '🪓' && user.id !== bot.user.id){
-                                                console.log(user.tag + ' => Jungle => Part1 => Part 1,1')
+                                                console.log(' => Jungle => Part1 => Part 1,1')
                                                 message.channel.send(jungle_cabaneorfire_embed)
                                                     .then(message =>{
                                                         message.react('🔥')
                                                         message.react('🏠')
                                                         if(reaction.emoji.name === '🔥' && user.id !== bot.user.id){
-                                                            console.log(user.tag + ' => Jungle => Part1 => Part1,2 => Campfire')
+                                                            console.log(' => Jungle => Part1 => Part1,2 => Campfire')
                                                             message.channel.send()
                                                         }
                                                         if(reaction.emoji.name === '🏠' && user.id !== bot.user.id){
-                                                            console.log(user.tag + ' => Jungle => Part1 => Part1,2 => Cabane')
+                                                            console.log(' => Jungle => Part1 => Part1,2 => Cabane')
                                                             message.channel.send()
                                                         }
                                                     })
