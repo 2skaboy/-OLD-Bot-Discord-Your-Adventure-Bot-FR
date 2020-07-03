@@ -1,2 +1,0 @@
-# Your-Adventure-Bot Discord
-Votre aventure Bot est un Bot Discord qui consiste à créer son histoire, exemple: Vous arrivez au milieu de la forêt amazonienne et vous avez le choix entre: grimper en haut d'un arbre ou construire une cabane, suivant le choix de l'utilisateur par réaction à un émoji, l'histoire se déroule suivant son choix. Ce Bot est parfait pour un serveur communautaire où l'on veut passer du temps en s'amusant.
