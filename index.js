@@ -13,7 +13,7 @@ bot.on('ready', function () {
 
 
 })
-        bot.login("NzI3ODA1ODgwMDg2NTYwODQw.XvxMdg.xX-27MnfKGHyBxsZlVccft3qxRU")
+        bot.login("")
 
         bot.on('message', message => {
 
